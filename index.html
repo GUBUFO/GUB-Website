@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GUB - Grupo Ufológico de Betim | Relato de Avistamento</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <img src="gub_logo.png" alt="GUB - Grupo Ufológico de Betim" class="logo">
+            <h1>GUB - Grupo Ufológico de Betim</h1>
+            <p class="subtitle">Pesquisa Ufológica em Betim, MG</p>
+        </header>
+
+        <main class="main-content">
+            <section class="intro">
+                <h2>Bem-vindo ao GUB - Grupo Ufológico de Betim</h2>
+                <p>Estamos realizando uma pesquisa ufológica com o objetivo de coletar relatos sobre avistamentos e experiências relacionadas a fenômenos não explicados na região de Betim, MG. Caso você tenha presenciado algum fenômeno ufológico, por favor, preencha o formulário abaixo com os detalhes de sua experiência.</p>
+                
+                <div class="important-note">
+                    <h3>Observação Importante:</h3>
+                    <p>Este questionário é destinado exclusivamente a pessoas que já presenciaram fenômenos ufológicos em Betim. Pedimos que responda às perguntas com sinceridade e forneça o máximo de detalhes possível para que possamos analisar adequadamente os relatos.</p>
+                    <p>Após o envio do seu relato, seus dados serão analisados pela nossa equipe, e, caso necessário, entraremos em contato para mais informações.</p>
+                </div>
+            </section>
+
+            <section class="lgpd-section">
+                <h3>Segurança dos Dados e Conformidade com a LGPD</h3>
+                <p>O Grupo Ufológico de Betim (GUB) compromete-se a proteger a privacidade e a segurança dos dados pessoais fornecidos pelos participantes. Todos os dados coletados serão tratados de acordo com a Lei Geral de Proteção de Dados Pessoais (LGPD - Lei nº 13.709/2018), que estabelece diretrizes para o tratamento de dados pessoais, visando proteger os direitos fundamentais de liberdade e privacidade dos indivíduos.</p>
+                <p>Os dados pessoais fornecidos serão utilizados exclusivamente para os fins desta pesquisa e não serão compartilhados com terceiros sem o consentimento expresso do participante. Além disso, adotaremos medidas técnicas e administrativas adequadas para proteger os dados contra acessos não autorizados, vazamentos ou qualquer forma de tratamento inadequado.</p>
+                <p><strong>Ao preencher este formulário, você concorda com o tratamento dos seus dados pessoais conforme descrito nesta política.</strong></p>
+            </section>
+
+            <form id="avistamento-form" class="form" enctype="multipart/form-data">
+                <h2>Formulário de Relato de Avistamento Ufológico</h2>
+                
+                <div class="form-group">
+                    <label for="nome">Nome Completo *</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="idade">Idade *</label>
+                    <input type="text" id="idade" name="idade" required placeholder="Ex: 30 anos">
+                </div>
+
+                <div class="form-group">
+                    <label>Gênero *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="genero" value="masculino" required>
+                            Masculino
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="genero" value="feminino" required>
+                            Feminino
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="genero" value="outro" required>
+                            Outro
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="genero" value="nao-responder" required>
+                            Prefiro não responder
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="data-avistamento">Data do Avistamento *</label>
+                    <input type="date" id="data-avistamento" name="data-avistamento" required>
+                    <small>Selecione a data em que o avistamento ocorreu</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="hora-avistamento">Hora do Avistamento *</label>
+                    <input type="time" id="hora-avistamento" name="hora-avistamento" required>
+                    <small>Selecione a hora aproximada do avistamento</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="descricao-fenomeno">Descrição do Fenômeno Observado *</label>
+                    <textarea id="descricao-fenomeno" name="descricao-fenomeno" required placeholder="Ex: Vi uma luz intensa no céu, que parecia mudar de cor e se mover de forma errática..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="local">Local do Avistamento (dentro de Betim) *</label>
+                    <input type="text" id="local" name="local" required placeholder="Ex: Rua das Palmeiras, Bairro Santa Lúcia, Betim">
+                    <small>O fenômeno deve ter ocorrido em Betim.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="duracao">Duração do Avistamento *</label>
+                    <input type="text" id="duracao" name="duracao" required placeholder="Ex: 15 minutos">
+                </div>
+
+                <div class="form-group">
+                    <label for="detalhes">Detalhes do Fenômeno *</label>
+                    <textarea id="detalhes" name="detalhes" required placeholder="Por favor, descreva o fenômeno com o máximo de detalhes possível, incluindo comportamentos incomuns ou algo que tenha lhe chamado a atenção."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Você possui algum registro (foto, vídeo, etc.) do fenômeno? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="possui-registro" value="sim" required>
+                            Sim
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="possui-registro" value="nao" required>
+                            Não
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="upload-group" style="display: none;">
+                    <label for="arquivo">Se "Sim", por favor, envie o arquivo aqui.</label>
+                    <input type="file" id="arquivo" name="arquivo" accept=".jpg,.jpeg,.png,.gif,.mp4,.mov,.avi">
+                    <small>Formatos aceitos: JPG, PNG, GIF (fotos) e MP4, MOV, AVI (vídeos). Tamanho máximo: 25 MB</small>
+                    <div id="file-error" class="error-message" style="display: none;"></div>
+                </div>
+
+                <div class="form-group">
+                    <label>Alguma outra pessoa estava com você durante o avistamento? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="outras-pessoas" value="sim" required>
+                            Sim
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="outras-pessoas" value="nao" required>
+                            Não
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label>Você já teve outras experiências ufológicas ou sobrenaturais? *</label>
+                    <div class="radio-group">
+                        <label class="radio-label">
+                            <input type="radio" name="outras-experiencias" value="sim" required>
+                            Sim
+                        </label>
+                        <label class="radio-label">
+                            <input type="radio" name="outras-experiencias" value="nao" required>
+                            Não
+                        </label>
+                    </div>
+                </div>
+
+                <div class="form-group" id="experiencias-group" style="display: none;">
+                    <label for="descricao-experiencias">Se "Sim", descreva brevemente.</label>
+                    <textarea id="descricao-experiencias" name="descricao-experiencias" placeholder="Descreva brevemente suas outras experiências..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="contato">Se você deseja ser contatado para mais informações sobre sua experiência, por favor, forneça seu e-mail ou telefone.</label>
+                    <input type="text" id="contato" name="contato" placeholder="Ex: joao.silva@email.com ou (31) 98765-4321">
+                    <small>Campo opcional</small>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="submit-btn">Enviar Relato</button>
+                </div>
+            </form>
+
+            <div id="success-message" class="success-message" style="display: none;">
+                <h3>Obrigado por compartilhar sua experiência conosco!</h3>
+                <p>Seu relato será analisado cuidadosamente. Se você optou por ser contatado, entraremos em contato em breve.</p>
+            </div>
+
+            <div id="error-message" class="error-message" style="display: none;">
+                <h3>Erro no envio</h3>
+                <p id="error-text">Ocorreu um erro ao enviar seu relato. Por favor, tente novamente.</p>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <p>&copy; 2025 GUB - Grupo Ufológico de Betim. Todos os direitos reservados.</p>
+            <p>Contato: gub1ufo@gmail.com</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
